@@ -20,10 +20,10 @@
     <form id="form" action="">
       <input id="input" autocomplete="off" /><button>Send</button>
     </form>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.3/socket.io.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
 
     <script>
-      var socket = io("wss://chat-test-854.herokuapp.com", { transport : ['websocket'] });
+      var socket = io();
 
       var messages = document.getElementById('messages');
       var form = document.getElementById('form');
